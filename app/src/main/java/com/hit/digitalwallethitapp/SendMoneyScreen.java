@@ -10,5 +10,7 @@ public class SendMoneyScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_send_money_screen);
+
+        //create to Kasun
     }
 }
