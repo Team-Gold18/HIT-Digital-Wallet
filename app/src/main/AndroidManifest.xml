@@ -10,6 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DigitalWalletHITAPP">
         <activity
+            android:name=".WithdrawScreen"
+            android:exported="true" />
+        <activity
+            android:name=".PaymentSummaryScreen"
+            android:exported="true" />
+        <activity
+            android:name=".ElectricityBillScreen"
+            android:exported="true" />
+        <activity
+            android:name=".SendMoneyScreen"
+            android:exported="true" />
+        <activity
+            android:name=".MenuScreen"
+            android:exported="true" />
+        <activity
+            android:name=".BalanceScreen"
+            android:exported="true" />
+        <activity
+            android:name=".ContactListScreen"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
