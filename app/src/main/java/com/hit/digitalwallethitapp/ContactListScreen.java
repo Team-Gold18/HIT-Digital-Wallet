@@ -37,6 +37,12 @@ public class ContactListScreen extends AppCompatActivity {
                 "Angela Smith",
                 "Andrea Summer",
                 "Karen William",
+                "Thomas Wise",
+                "Samantha",
+                "Rose Hope",
+                "Angela Smith",
+                "Andrea Summer",
+                "Karen William",
                 "Thomas Wise"
         };
 
@@ -46,10 +52,22 @@ public class ContactListScreen extends AppCompatActivity {
                 "Bank - 0987 3422 8756",
                 "Bank - 0987 3422 8756",
                 "Bank - 0987 3422 8756",
+                "Bank - 0987 3422 8756",
+                "Bank - 0987 3422 8756",
+                "Bank - 0987 3422 8756",
+                "Bank - 0987 3422 8756",
+                "Bank - 0987 3422 8756",
+                "Bank - 0987 3422 8756",
                 "Bank - 0987 3422 8756"
         };
 
         userImg = new int[]{
+                R.drawable.samantha,
+                R.drawable.rose,
+                R.drawable.angela,
+                R.drawable.andrea,
+                R.drawable.korean,
+                R.drawable.thomas,
                 R.drawable.samantha,
                 R.drawable.rose,
                 R.drawable.angela,
