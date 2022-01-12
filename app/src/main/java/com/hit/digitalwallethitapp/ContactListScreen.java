@@ -51,11 +51,11 @@ public class ContactListScreen extends AppCompatActivity {
 
         userImg = new int[]{
                 R.drawable.samantha,
-                R.drawable.Rose,
-                R.drawable.Angela,
-                R.drawable.Andrea,
-                R.drawable.Korean,
-                R.drawable.Thomas
+                R.drawable.rose,
+                R.drawable.angela,
+                R.drawable.andrea,
+                R.drawable.korean,
+                R.drawable.thomas
         };
 
         getData();

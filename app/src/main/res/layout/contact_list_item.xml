@@ -12,10 +12,9 @@
         android:layout_marginStart="48dp"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
-        android:background="@drawable/user_img"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/samantha"
+        android:background="@drawable/samantha"
         />
 
     <TextView
