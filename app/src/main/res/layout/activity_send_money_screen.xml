@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".SendMoneyScreen">
 
+
     <ImageView
         android:id="@+id/IV01"
         android:layout_width="wrap_content"
@@ -14,50 +15,44 @@
         android:layout_marginTop="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintHorizontal_bias="0.078"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.069"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_arrow___left" />
 
     <TextView
-        android:id="@+id/TV01"
-        android:layout_width="match_parent"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="130dp"
-        android:layout_marginTop="65dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/balance_text"
         android:text="Send Money"
+        android:textAlignment="center"
+        android:textColor="#082431"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        android:textSize="32sp"
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="315dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="718dp"
+        android:background="@drawable/round_button"
+        android:letterSpacing="0.3"
+        android:text="SWIPE TO SEND "
+        android:backgroundTint="#5A5AA7"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046" />
+        app:layout_constraintStart_toStartOf="parent"/>
 
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="115dp"
-        android:layout_marginEnd="37dp"
-        android:background="#D5CECE"
-        android:hint="@string/select"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
 
-        <AutoCompleteTextView
-            android:id="@+id/autoComplete_txt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="none" />
-    </com.google.android.material.textfield.TextInputLayout>
 
 
 
