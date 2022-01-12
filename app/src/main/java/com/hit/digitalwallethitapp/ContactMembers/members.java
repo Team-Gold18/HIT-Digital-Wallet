@@ -2,12 +2,12 @@ package com.hit.digitalwallethitapp.ContactMembers;
 
 import java.io.Serializable;
 
-public class Members implements Serializable {
+public class members implements Serializable {
 
     private String name;
     private int image;
 
-    public Members(){
+    public members(){
 
     }
     public String getName() {

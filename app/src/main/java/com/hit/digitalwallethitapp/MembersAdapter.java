@@ -8,23 +8,24 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.hit.digitalwallethitapp.ContactMembers.Members;
+
+import com.hit.digitalwallethitapp.ContactMembers.members;
 
 import java.util.List;
 
 public class MembersAdapter extends BaseAdapter {
 
     private Context context;
-    private List<Members> fruitList;
+    private List<members> MembersList;
 
-    public MembersAdapter(Context context, List<Members> MembersList) {
+    public MembersAdapter(Context context, List<members> MembersList) {
         this.context = context;
-        this.fruitList = fruitList;
+        this.MembersList = MembersList;
     }
 
     @Override
     public int getCount() {
-        return fruitList != null ? fruitList.size() : 0;
+        return MembersList != null ? MembersList.size() : 0;
     }
 
     @Override
@@ -40,13 +41,13 @@ public class MembersAdapter extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         View rootView = LayoutInflater.from(context)
-                .inflate(R.layout.item_Members, viewGroup, false);
+                .inflate(R.layout.item_members, viewGroup, false);
 
         TextView txtName = rootView.findViewById(R.id.name);
         ImageView image = rootView.findViewById(R.id.image);
 
-        txtName.setText(fruitList.get(i).getName());
-        image.setImageResource(fruitList.get(i).getImage());
+        txtName.setText(MembersList.get(i).getName());
+        image.setImageResource(MembersList.get(i).getImage());
 
         return rootView;
     }

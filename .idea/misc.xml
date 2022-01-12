@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/software project/DigitalWalletHITAPP/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.23692307692307693" />
         <entry key="..\:/software project/DigitalWalletHITAPP/app/src/main/res/drawable/custom_circle.xml" value="0.23692307692307693" />
+        <entry key="..\:/software project/DigitalWalletHITAPP/app/src/main/res/drawable/edit_backgroud.xml" value="0.2265625" />
         <entry key="..\:/software project/DigitalWalletHITAPP/app/src/main/res/drawable/ic_arrow___left.xml" value="0.23692307692307693" />
         <entry key="..\:/software project/DigitalWalletHITAPP/app/src/main/res/drawable/ic_group_5.xml" value="0.23692307692307693" />
         <entry key="..\:/software project/DigitalWalletHITAPP/app/src/main/res/drawable/ic_launcher_background.xml" value="0.23692307692307693" />
@@ -13,6 +14,8 @@
         <entry key="..\:/software project/DigitalWalletHITAPP/app/src/main/res/layout/activity_electricity_bill_screen.xml" value="0.11684782608695653" />
         <entry key="..\:/software project/DigitalWalletHITAPP/app/src/main/res/layout/activity_main.xml" value="0.1875" />
         <entry key="..\:/software project/DigitalWalletHITAPP/app/src/main/res/layout/activity_send_money_screen.xml" value="0.22" />
+        <entry key="..\:/software project/DigitalWalletHITAPP/app/src/main/res/layout/activity_top_up_screen.xml" value="0.1721014492753623" />
+        <entry key="..\:/software project/DigitalWalletHITAPP/app/src/main/res/layout/item_members.xml" value="0.33" />
       </map>
     </option>
   </component>

@@ -19,7 +19,7 @@
             android:name=".ElectricityBillScreen"
             android:exported="true" />
         <activity
-            android:name=".SendMoneyScreen"
+            android:name=".MainActivity"
             android:exported="true" />
         <activity
             android:name=".MenuScreen"
@@ -31,7 +31,8 @@
             android:name=".ContactListScreen"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SendMoneyScreen"
+
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
