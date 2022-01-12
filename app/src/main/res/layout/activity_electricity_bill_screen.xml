@@ -85,7 +85,16 @@
         app:layout_constraintTop_toTopOf="parent">
 
 
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Account Info"
+            android:textColor="#082431"
+            android:textSize="18sp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="42dp"
+            />
 
 
 
