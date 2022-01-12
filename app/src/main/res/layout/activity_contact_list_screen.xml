@@ -30,6 +30,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+<!--    hjghjgjgjj -->
+
     <EditText
         android:layout_width="315dp"
         android:layout_height="50dp"
