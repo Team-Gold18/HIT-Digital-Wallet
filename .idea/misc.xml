@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/HIT-Digital-Wallet/app/src/main/res/drawable/boxlayout.xml" value="0.2203125" />
+        <entry key="..\:/HIT-Digital-Wallet/app/src/main/res/drawable/btn_main.xml" value="0.14166666666666666" />
+        <entry key="..\:/HIT-Digital-Wallet/app/src/main/res/drawable/select_box_layout.xml" value="0.2203125" />
         <entry key="..\:/HIT-Digital-Wallet/app/src/main/res/layout/activity_contact.xml" value="0.1640625" />
-        <entry key="..\:/HIT-Digital-Wallet/app/src/main/res/layout/activity_withdraw_screen.xml" value="0.33" />
+        <entry key="..\:/HIT-Digital-Wallet/app/src/main/res/layout/activity_contact_list_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/HIT-Digital-Wallet/app/src/main/res/layout/activity_withdraw_screen.xml" value="0.22" />
       </map>
     </option>
   </component>
