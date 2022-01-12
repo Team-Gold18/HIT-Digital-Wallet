@@ -138,27 +138,6 @@
     </androidx.cardview.widget.CardView>
 
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="54dp"
-        android:layout_height="52dp"
-        android:layout_marginBottom="92dp"
-        android:background="@drawable/custom_circle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.03"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="65dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/arrow"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
-
-
     <Button
         android:id="@+id/button"
         android:layout_width="315dp"
@@ -173,9 +152,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:backgroundTint="#5A5AA7" />
-
-
-
 
     <ImageView
         android:id="@+id/imageView2"
@@ -217,7 +193,7 @@
             android:textColor="#2C2C63"
             android:textSize="23sp"
             android:layout_marginLeft="55dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="18dp"
             android:textStyle="bold"/>
 
         <TextView
