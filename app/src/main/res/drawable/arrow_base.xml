@@ -5,12 +5,14 @@
         android:bottomRightRadius="15dp"
         android:radius="0.1dp"
         android:topLeftRadius="15dp"
-        android:topRightRadius="15dp" />
-
+        android:topRightRadius="15dp"
+        />
     <solid android:color="#32A7E2" />
 
     <stroke
         android:width="5dp"
-        android:color="#32A7E2" />
+        android:color="#32A7E2"
+        android:layout_width="43dp"
+        android:layout_height="45dp"/>
 
 </shape>
