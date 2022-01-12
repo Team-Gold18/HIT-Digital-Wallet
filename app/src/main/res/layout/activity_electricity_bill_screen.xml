@@ -7,9 +7,18 @@
     tools:context=".ElectricityBillScreen">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="dsc"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="131dp"
+        android:layout_marginRight="124dp"
+        android:fontFamily="@font/poppins"
+        android:text="Electricity Bill"
+        android:textColor="#2C2C63"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
