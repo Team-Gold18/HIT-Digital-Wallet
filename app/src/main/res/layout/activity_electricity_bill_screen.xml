@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E5E5E5"
     tools:context=".ElectricityBillScreen">
 
     <TextView
@@ -115,7 +116,7 @@
             android:fontFamily="@font/poppins"
             android:text="Samantha William"
             android:textColor="#082431"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:layout_marginLeft="88dp"
             android:layout_marginTop="122dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -147,6 +148,33 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="month"
+            android:textColor="#082431"
+            android:textSize="12sp"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="302dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="September 2020"
+            android:textColor="#082431"
+            android:textSize="14sp"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="322dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
 
 
     </androidx.cardview.widget.CardView>
