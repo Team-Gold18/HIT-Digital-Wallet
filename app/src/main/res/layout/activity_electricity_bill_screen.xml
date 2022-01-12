@@ -96,8 +96,20 @@
             android:layout_marginTop="42dp"
             />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Name"
+            android:textColor="#082431"
+            android:textSize="12sp"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="102dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-
+        
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
