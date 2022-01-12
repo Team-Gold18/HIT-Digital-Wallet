@@ -32,4 +32,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160.06dp"
+        android:layout_marginRight="99dp"
+        android:layout_marginLeft="99dp"
+        android:text="233.150"
+        android:fontFamily="@font/poppins"
+        android:textSize="50sp"
+        android:textColor="#2C2C63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
