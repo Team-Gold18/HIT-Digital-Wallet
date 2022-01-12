@@ -4,6 +4,243 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PaymentSummaryScreen">
+    tools:context=".PaymentSummaryScreen"
+    android:background="#f3f3f8">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="42dp"
+        android:fontFamily="@font/poppins"
+        android:text="Payment Summary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#082431"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/arrow_left"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:outlineSpotShadowColor="#200E32" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="315dp"
+        android:layout_height="205dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="108dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="20dp"
+            android:text="Thomas Wise"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="50dp"
+            android:text="0821 -  7654  - 3210"
+            android:textAlignment="center"
+            android:textColor="#A09D9C"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/bookmark" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="262dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="100dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Promo Code"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="13dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="APPLY"
+                android:textColor="#32A7E2"
+                android:textSize="15dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="195dp"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:dashWidth="4dp"
+            android:dashGap="3dp"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="315dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="52dp"
+        app:cardBackgroundColor="#AAAACF"
+        app:cardElevation="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardCornerRadius="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:text="Total"
+            android:textColor="#3F3F65"
+            android:textSize="25dp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="54dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/custom_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="315dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="718dp"
+        android:background="@drawable/round_button"
+        android:letterSpacing="0.3"
+        android:text="SWIPE TO PAY "
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#5A5AA7" />
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="42dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="200dp"
+        android:src="@drawable/square_star_custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="27dp"
+        android:background="@drawable/star"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="315dp"
+        android:layout_height="205dp"
+        android:layout_marginEnd="56dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Simple Package"
+            android:textColor="#2C2C63"
+            android:textSize="23sp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14 GB Internet + 2 GB Streaming Activate Period 30 days."
+            android:layout_marginTop="54dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#A09D9C"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="149dp"
+            android:src="@drawable/men" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
