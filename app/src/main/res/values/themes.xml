@@ -19,5 +19,8 @@
         <item name="cornerSize">50%</item>
     </style>
 
+    <style name="fontFamilyAndSize">
+        <item name="fontFamily">@font/poppins</item>
+    </style>
 
 </resources>
