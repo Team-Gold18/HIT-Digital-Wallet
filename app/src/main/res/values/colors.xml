@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="topic_black">#082431</color>
     <color name="search_color">#2C3A4B</color>
+    <color name="menu_list_text">#273240</color>
+    <color name="menu_bg">#E5E5E5</color>
+    <color name="icon_color">#32A7E2</color>
 </resources>

@@ -17,4 +17,10 @@
     <style name="text_style">
         <item name="fontFamily">@font/poppins</item>
     </style>
+
+    <style name="menu_list_items">
+        <item name="android:textSize">14sp</item>
+        <item name="color">@color/menu_list_text</item>
+        <item name="android:textStyle">normal</item>
+    </style>
 </resources>
