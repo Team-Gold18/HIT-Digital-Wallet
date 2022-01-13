@@ -7,6 +7,7 @@
     android:background="#E5E5E5"
     tools:context=".ElectricityBillScreen">
 
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -34,15 +35,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="99dp"
         android:layout_marginTop="160.06dp"
         android:layout_marginRight="99dp"
-        android:layout_marginLeft="99dp"
-        android:text="233.150"
         android:fontFamily="@font/poppins"
-        android:textSize="50sp"
+        android:text="233.150"
         android:textColor="#2C2C63"
+        android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -74,38 +76,38 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
-        android:layout_width="410dp"
-        android:layout_height="430dp"
+        android:layout_width="395dp"
+        android:layout_height="499dp"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="313dp"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="25dp"
         app:cardElevation="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="42dp"
             android:fontFamily="@font/poppins"
             android:text="Account Info"
             android:textColor="#082431"
-            android:textSize="18sp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="42dp"
-            />
+            android:textSize="18sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="102dp"
             android:fontFamily="@font/poppins"
             android:text="Name"
             android:textColor="#082431"
             android:textSize="12sp"
-            android:layout_marginLeft="88dp"
-            android:layout_marginTop="102dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -113,12 +115,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="122dp"
             android:fontFamily="@font/poppins"
             android:text="Samantha William"
             android:textColor="#082431"
             android:textSize="14sp"
-            android:layout_marginLeft="88dp"
-            android:layout_marginTop="122dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -126,12 +128,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="202dp"
             android:fontFamily="@font/poppins"
             android:text="Customer ID"
             android:textColor="#082431"
             android:textSize="12sp"
-            android:layout_marginLeft="88dp"
-            android:layout_marginTop="202dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -139,24 +141,25 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="222dp"
             android:fontFamily="@font/poppins"
             android:text="0098 7485 1298"
             android:textColor="#082431"
             android:textSize="14sp"
-            android:layout_marginLeft="88dp"
-            android:layout_marginTop="222dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="302dp"
             android:fontFamily="@font/poppins"
             android:text="month"
             android:textColor="#082431"
             android:textSize="12sp"
-            android:layout_marginLeft="88dp"
-            android:layout_marginTop="302dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -164,19 +167,19 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="322dp"
             android:fontFamily="@font/poppins"
             android:text="September 2020"
             android:textColor="#082431"
             android:textSize="14sp"
-            android:layout_marginLeft="88dp"
-            android:layout_marginTop="322dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
 
 
-
     </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
