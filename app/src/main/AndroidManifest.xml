@@ -22,7 +22,7 @@
             android:name=".SendMoneyScreen"
             android:exported="true" />
         <activity
-            android:name=".MenuScreen"
+            android:name=".MainActivity"
             android:exported="true" />
         <activity
             android:name=".BalanceScreen"
@@ -31,7 +31,7 @@
             android:name=".ContactListScreen"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MenuScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
