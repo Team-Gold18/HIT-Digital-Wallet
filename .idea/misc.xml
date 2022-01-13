@@ -3,10 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Digital-Wallet/HIT-Digital-Wallet/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.12920962199312716" />
+        <entry key="..\:/Digital-Wallet/HIT-Digital-Wallet/app/src/main/res/drawable/balance_background.xml" value="0.1" />
         <entry key="..\:/Digital-Wallet/HIT-Digital-Wallet/app/src/main/res/drawable/bg_contacts.xml" value="0.1" />
         <entry key="..\:/Digital-Wallet/HIT-Digital-Wallet/app/src/main/res/drawable/boxlayout.xml" value="0.1" />
         <entry key="..\:/Digital-Wallet/HIT-Digital-Wallet/app/src/main/res/drawable/btn_main.xml" value="0.1" />
-        <entry key="..\:/Digital-Wallet/HIT-Digital-Wallet/app/src/main/res/layout/activity_balance_screen.xml" value="0.22" />
+        <entry key="..\:/Digital-Wallet/HIT-Digital-Wallet/app/src/main/res/drawable/ic_launcher_background.xml" value="0.12920962199312716" />
+        <entry key="..\:/Digital-Wallet/HIT-Digital-Wallet/app/src/main/res/drawable/search_bar.xml" value="0.12920962199312716" />
+        <entry key="..\:/Digital-Wallet/HIT-Digital-Wallet/app/src/main/res/drawable/select_box_layout.xml" value="0.12920962199312716" />
+        <entry key="..\:/Digital-Wallet/HIT-Digital-Wallet/app/src/main/res/layout/activity_balance_screen.xml" value="0.25" />
         <entry key="..\:/Digital-Wallet/HIT-Digital-Wallet/app/src/main/res/layout/activity_contact_list_screen.xml" value="0.1" />
         <entry key="..\:/Digital-Wallet/HIT-Digital-Wallet/app/src/main/res/layout/activity_electricity_bill_screen.xml" value="0.1" />
         <entry key="..\:/Digital-Wallet/HIT-Digital-Wallet/app/src/main/res/layout/activity_main.xml" value="0.1" />
@@ -15,7 +20,7 @@
         <entry key="..\:/Digital-Wallet/HIT-Digital-Wallet/app/src/main/res/layout/activity_send_money_screen.xml" value="0.1" />
         <entry key="..\:/Digital-Wallet/HIT-Digital-Wallet/app/src/main/res/layout/activity_top_up_screen.xml" value="0.1" />
         <entry key="..\:/Digital-Wallet/HIT-Digital-Wallet/app/src/main/res/layout/activity_withdraw_screen.xml" value="0.1" />
-        <entry key="..\:/Digital-Wallet/HIT-Digital-Wallet/app/src/main/res/layout/balancelist_layout.xml" value="0.1" />
+        <entry key="..\:/Digital-Wallet/HIT-Digital-Wallet/app/src/main/res/layout/balancelist_layout.xml" value="0.43684820393974505" />
         <entry key="..\:/HIT-Digital-Wallet/app/src/main/res/drawable/arrow_base.xml" value="0.19583333333333333" />
         <entry key="..\:/HIT-Digital-Wallet/app/src/main/res/drawable/ic_arrow___right.xml" value="0.19583333333333333" />
         <entry key="..\:/HIT-Digital-Wallet/app/src/main/res/drawable/ic_launcher_background.xml" value="0.19583333333333333" />
