@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
 
-    <style name="Theme.DigitalWalletHITAPP" parent="Theme.AppCompat.NoActionBar">
+    <style name="Theme.DigitalWalletHITAPP" parent="Theme.MaterialComponents.DayNight.NoActionBar">
 
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
@@ -20,6 +20,11 @@
     <style name="roundedImageViewRounded">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="bgRound">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">47dp</item>
     </style>
 
     <style name="contactFont">
