@@ -22,8 +22,9 @@
         <item name="cornerSize">50%</item>
     </style>
 
-    <style name="fontFamilyAndSize">
+    <style name="contactFont">
         <item name="fontFamily">@font/poppins</item>
+        <item name="android:letterSpacing">0.1</item>
     </style>
 
 
