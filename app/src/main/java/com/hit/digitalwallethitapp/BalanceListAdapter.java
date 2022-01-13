@@ -17,7 +17,7 @@ public class BalanceListAdapter extends RecyclerView.Adapter<BalanceListAdapter.
     List<BalanceModel> bData;
     private BalanceViewHolder.RecycleViewClickListener clickListener;
 
-    public BalanceListAdapter(Context context, List<BalanceModel> bData, BalanceViewHolder.RecycleViewClickListener clickListener) {
+    public BalanceListAdapter(Context context, List<BalanceModel> bData) {
         this.context = context;
         this.bData = bData;
         this.clickListener = clickListener;
@@ -28,23 +28,34 @@ public class BalanceListAdapter extends RecyclerView.Adapter<BalanceListAdapter.
     public BalanceViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View layout;
         layout = LayoutInflater.from(context).inflate(R.layout.balancelist_layout, parent, false);
+        return new BalanceViewHolder(layout,context,bData,clickListener);
     }
 
     @Override
     public void onBindViewHolder(@NonNull BalanceViewHolder holder, int position) {
+        int photo = bData.get(position).getPhoto();
+        String topic = bData.get(position).getTopic().toString();
+        String date = bData.get(position).getDate().toString();
+        String balance = bData.get(position).getBalance().toString();
+        String description = bData.get(position).getDescription().toString();
 
+        holder.img_photo.setImageResource(photo);
+        holder.tv_topic.setText(topic);
+        holder.tv_date.setText(date);
+        holder.tv_balance.setText(balance);
+        holder.tv_description.setText(description);
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return bData.size();
     }
 
     public static class BalanceViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         TextView tv_topic, tv_date, tv_balance, tv_description;
         ImageView img_photo;
 
-        public BalanceViewHolder(@NonNull View itemView) {
+        public BalanceViewHolder(@NonNull View itemView,Context context,List<BalanceModel> bData, RecycleViewClickListener clickListener) {
             super(itemView);
             tv_topic = itemView.findViewById(R.id.textTopic);
             tv_date = itemView.findViewById(R.id.textDate);

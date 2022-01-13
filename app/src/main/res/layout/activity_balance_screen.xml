@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BalanceScreen"
-    android:background="@drawable/boxlayout">
+    tools:context=".BalanceScreen">
 
     <TextView
         android:id="@+id/textView"
@@ -122,16 +121,17 @@
         style="@style/balance_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="391px"
         android:text="Transactions"
         android:textColor="#818197"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.431" />
+        app:layout_constraintVertical_bias="0.443" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_balance"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="460dp"

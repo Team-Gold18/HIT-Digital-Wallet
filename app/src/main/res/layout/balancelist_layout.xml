@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -24,11 +24,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="5dp"
-        android:text="Grocery"
         android:fontFamily="@font/poppins"
-        android:textStyle="normal"
+        android:text="Grocery"
         android:textColor="#273240"
         android:textSize="45px"
+        android:textStyle="normal"
+        android:paddingBottom="2sp"
         app:layout_constraintBottom_toBottomOf="@+id/balanceImage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.068"
@@ -51,16 +52,13 @@
         android:id="@+id/textDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="296dp"
+        android:layout_marginTop="3dp"
         android:fontFamily="@font/poppins"
         android:text="Nov 17"
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="@+id/balanceImage"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
-        app:layout_constraintStart_toEndOf="@+id/balanceImage"
-        app:layout_constraintTop_toTopOf="@+id/balanceImage"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="@+id/textTopic"
+        app:layout_constraintTop_toBottomOf="@+id/textTopic" />
 
     <TextView
         android:id="@+id/textBalance"
@@ -81,9 +79,10 @@
         android:id="@+id/textDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
         android:layout_marginEnd="28dp"
-        android:text="Minimarket Anugrah"
         android:fontFamily="@font/poppins"
+        android:text="Minimarket Anugrah"
         android:textSize="43px"
         app:layout_constraintBottom_toBottomOf="@+id/textDate"
         app:layout_constraintEnd_toEndOf="parent"

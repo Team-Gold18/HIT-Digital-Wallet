@@ -12,7 +12,9 @@
         android:layout_height="50dp"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
-        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+        <!--app:shapeAppearanceOverlay="@style/roundedImageViewRounded"-->
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:background="@drawable/samantha"
