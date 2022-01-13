@@ -9,10 +9,10 @@ import android.widget.Spinner;
 import com.hit.digitalwallethitapp.ContactMembers.Data;
 
 
-public class SendMoneyScreen extends AppCompatActivity  {
+public class SendMoneyScreen extends AppCompatActivity implements CustomSpinner.OnSpinnerEventsListener  {
 
 
-    private Spinner spinner_members;
+    private CustomSpinner spinner_members;
 
 
     private MembersAdapter adapter;
@@ -23,11 +23,25 @@ public class SendMoneyScreen extends AppCompatActivity  {
 
         //create to Kasun
 
+        spinner_members = findViewById(R.id.spinner_mambers);
 
+        spinner_members.setSpinnerEventsListener(this);
         adapter = new MembersAdapter(SendMoneyScreen.this, Data.getMembersList());
         spinner_members.setAdapter(adapter);
 
 
 
+    }
+
+    @Override
+    public void onPopupWindowOpened(Spinner spinner) {
+
+        spinner_members.setBackground(getResources().getDrawable(R.drawable.bg_spinner_members_up));
+    }
+
+    @Override
+    public void onPopupWindowClosed(Spinner spinner) {
+
+        spinner_members.setBackground(getResources().getDrawable(R.drawable.bg_spinner_members));
     }
 }
