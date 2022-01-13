@@ -7,83 +7,105 @@
     tools:context=".SendMoneyScreen">
 
 
+    <Spinner
+        android:id="@+id/spinner_mambers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginRight="40dp"
+
+        android:background="@drawable/bg_spinner_members"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/edit_backgroud"
+
+        android:drawablePadding="10dp"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:text="150.000"
+        android:textColor="#525298"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_mambers" />
+
+
+    <LinearLayout
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
     <ImageView
         android:id="@+id/IV01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingLeft="10dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="60dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_arrow___left" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
-        android:layout_marginTop="60dp"
         android:fontFamily="@font/balance_text"
+        android:paddingTop="30dp"
         android:text="Send Money"
-        android:textAlignment="center"
+        android:paddingRight="50dp"
+        android:paddingLeft="100dp"
+
         android:textColor="#082431"
         android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textStyle="bold" />
+</LinearLayout>
 
-
-    <Spinner
-        android:id="@+id/spinner_mambers"
+    <com.ebanx.swipebtn.SwipeButton
+        android:id="@+id/swipeId"
         android:layout_width="315dp"
-        android:layout_height="80dp"
+        android:layout_height="52dp"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/swipe_button"
+        android:gravity="center"
 
-        android:background="@drawable/bg_spinner_members"
-        app:layout_constraintBottom_toTopOf="@+id/editText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.387" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="313dp"
-        android:layout_height="54dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:background="@drawable/edit_backgroud"
-        android:drawableLeft="ic_lock_black_24dp"
-        android:drawablePadding="10dp"
-        android:paddingLeft="10dp"
-        android:text="Money Payment"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.382" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="315dp"
-        android:layout_height="64dp"
-        android:layout_marginBottom="30dp"
-        android:layout_marginTop="718dp"
-        android:background="@drawable/round_button"
-        android:letterSpacing="0.3"
-        android:text="SWIPE TO SEND "
-        android:backgroundTint="#5A5AA7"
-        android:textSize="15sp"
+        app:button_bottom_padding="20dp"
+        app:button_left_padding="20dp"
+        app:button_right_padding="20dp"
+        app:button_top_padding="20dp"
+        app:inner_text="SWIPE TO SEND"
+        app:inner_text_background="@drawable/text_design"
+        app:inner_text_size="16sp"
+        app:inner_text_top_padding="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
 
 
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="0.967">
 
+    </com.ebanx.swipebtn.SwipeButton>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
