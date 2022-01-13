@@ -78,12 +78,12 @@
         android:id="@+id/cardView"
         android:layout_width="395dp"
         android:layout_height="499dp"
-        android:layout_marginStart="4dp"
         android:layout_marginTop="313dp"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="25dp"
         app:cardElevation="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
@@ -176,7 +176,6 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
 
 
     </androidx.cardview.widget.CardView>
