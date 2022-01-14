@@ -10,12 +10,12 @@
     <com.hit.digitalwallethitapp.CustomSpinner
         android:id="@+id/spinner_mambers"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_margin="45dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="30dp"
         android:layout_marginRight="40dp"
-
+        
         android:layout_marginBottom="30dp"
         android:background="@drawable/bg_spinner_members"
         app:layout_constraintBottom_toTopOf="@+id/editText"
@@ -86,7 +86,7 @@
     <com.ebanx.swipebtn.SwipeButton
         android:id="@+id/swipeId"
         android:layout_width="315dp"
-        android:layout_height="52dp"
+        android:layout_height="60dp"
         android:layout_margin="20dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/swipe_button"
@@ -104,10 +104,10 @@
         app:layout_constraintEnd_toEndOf="parent"
 
 
-        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintHorizontal_bias="0.468"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.967">
+        app:layout_constraintVertical_bias="0.958">
 
     </com.ebanx.swipebtn.SwipeButton>
 

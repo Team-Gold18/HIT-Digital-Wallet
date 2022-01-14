@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">DigitalWalletHITAPP</string>
 
+    <string name="main_topic">Withdraw</string>
+
+    <string name="amount">620.000</string>
+    <string name="accBalance">Your Balance Rp 8.500.000</string>
+    <string name="chooseBank">Choose Bank Account</string>
+
 </resources>
