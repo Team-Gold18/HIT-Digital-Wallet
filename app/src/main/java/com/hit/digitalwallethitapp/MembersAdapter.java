@@ -45,9 +45,12 @@ public class MembersAdapter extends BaseAdapter {
 
         TextView txtName = rootView.findViewById(R.id.name);
         ImageView image = rootView.findViewById(R.id.image);
+        TextView txtBank = rootView.findViewById(R.id.Bank);
+
 
         txtName.setText(MembersList.get(i).getName());
         image.setImageResource(MembersList.get(i).getImage());
+        txtBank.setText(MembersList.get(i).getBank());
 
         return rootView;
     }

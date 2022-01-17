@@ -6,6 +6,7 @@ public class members implements Serializable {
 
     private String name;
     private int image;
+    private String Bank;
 
     public members(){
 
@@ -26,4 +27,11 @@ public class members implements Serializable {
         this.image = image;
     }
 
+    public String getBank() {
+        return Bank;
+    }
+
+    public void setBank(String bank) {
+        Bank = bank;
+    }
 }
