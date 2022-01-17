@@ -177,6 +177,20 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <Button
+            android:id="@+id/button"
+            android:layout_width="315dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#5A5AA7"
+            android:letterSpacing="0.3"
+            android:text="SWIPE TO SEND "
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.cardview.widget.CardView>
 
