@@ -24,11 +24,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
+        android:id="@+id/imageView4"
         android:layout_width="26.5dp"
         android:layout_height="26.5dp"
+        android:layout_marginLeft="32dp"
         android:layout_marginTop="60dp"
         android:layout_marginRight="316.5dp"
-        android:layout_marginLeft="32dp"
         android:src="@drawable/ic_arrow___left"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,6 +59,7 @@
         android:layout_marginRight="177dp"
         android:text="Details"
         android:fontFamily="@font/poppins"
+        android:textColor="#082431"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -181,9 +183,9 @@
             android:id="@+id/button"
             android:layout_width="315dp"
             android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="400dp"
             android:layout_marginBottom="30dp"
-            android:layout_gravity="center_horizontal"
             android:backgroundTint="#5A5AA7"
             android:letterSpacing="0.3"
             android:text="SWIPE TO SEND "
@@ -192,7 +194,37 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_group_4"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="102dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cardView"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cusid"
+            android:layout_marginTop="202dp"
+            android:layout_marginLeft="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cardView" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cusid"
+            android:layout_marginTop="302dp"
+            android:layout_marginLeft="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cardView" />
+
     </androidx.cardview.widget.CardView>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
