@@ -30,6 +30,19 @@
             android:exported="true" />
 
         <activity
+            android:name=".BalanceScreen"
+            android:exported="true" />
+
+
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true" />
+
+        <activity
+            android:name=".TopUpScreen"
+            android:exported="true" />
+
+        <activity
             android:name=".SendMoneyScreen"
 
             android:exported="true">
