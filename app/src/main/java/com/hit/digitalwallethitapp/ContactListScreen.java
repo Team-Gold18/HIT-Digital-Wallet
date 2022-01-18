@@ -70,13 +70,13 @@ public class ContactListScreen extends AppCompatActivity {
                 R.drawable.rose,
                 R.drawable.angela,
                 R.drawable.andrea,
-                R.drawable.korean,
+              //  R.drawable.korean,
                 R.drawable.thomas,
                 R.drawable.samantha,
                 R.drawable.rose,
                 R.drawable.angela,
                 R.drawable.andrea,
-                R.drawable.korean,
+               // R.drawable.korean,
                 R.drawable.thomas
         };
 
