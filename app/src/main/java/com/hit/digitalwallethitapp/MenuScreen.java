@@ -4,17 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.app.ListActivity;
 import android.os.Bundle;
-import android.widget.ListAdapter;
 
 import java.util.ArrayList;
 
 public class MenuScreen extends AppCompatActivity {
-
     MenuAdapterClass menuAdapterClass;
     ArrayList<MenuModelClass> menu_items;
     RecyclerView recyclerView;
+
 
 
 
