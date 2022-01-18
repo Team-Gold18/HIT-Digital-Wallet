@@ -2,10 +2,13 @@ package com.hit.digitalwallethitapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Spinner;
 
 
+import com.ebanx.swipebtn.OnStateChangeListener;
+import com.ebanx.swipebtn.SwipeButton;
 import com.hit.digitalwallethitapp.ContactMembers.Data;
 
 
@@ -23,12 +26,23 @@ public class SendMoneyScreen extends AppCompatActivity implements CustomSpinner.
 
         //create to Kasun
 
+
+
         spinner_members = findViewById(R.id.spinner_mambers);
 
         spinner_members.setSpinnerEventsListener(this);
         adapter = new MembersAdapter(SendMoneyScreen.this, Data.getMembersList());
         spinner_members.setAdapter(adapter);
 
+
+        SwipeButton swipeButton =findViewById(R.id.swipeId);
+
+        swipeButton.setOnStateChangeListener(new OnStateChangeListener() {
+            @Override
+            public void onStateChange(boolean active) {
+                startActivity(new Intent(SendMoneyScreen.this, WithdrawScreen.class ));
+            }
+        });
 
 
     }
