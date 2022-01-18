@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.Spinner;
 
 
@@ -17,6 +19,8 @@ public class SendMoneyScreen extends AppCompatActivity implements CustomSpinner.
 
     private CustomSpinner spinner_members;
 
+
+    ImageView arr;
 
     private MembersAdapter adapter;
     @Override
@@ -41,6 +45,16 @@ public class SendMoneyScreen extends AppCompatActivity implements CustomSpinner.
             @Override
             public void onStateChange(boolean active) {
                 startActivity(new Intent(SendMoneyScreen.this, WithdrawScreen.class ));
+            }
+        });
+
+        arr = findViewById(R.id.IV01);
+
+        arr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SendMoneyScreen.this, MenuScreen.class);
+                startActivity(intent);
             }
         });
 
