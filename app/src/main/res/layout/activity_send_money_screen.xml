@@ -7,6 +7,8 @@
     tools:context=".SendMoneyScreen">
 
 
+    <!--changes-->
+
     <com.hit.digitalwallethitapp.CustomSpinner
         android:id="@+id/spinner_mambers"
         android:layout_width="match_parent"
