@@ -63,7 +63,6 @@
                 android:focusable="true"
                 android:src="@drawable/transfer"
                 app:layout_constraintStart_toStartOf="parent" />
-            <!--app:layout_constraintTop_toBottomOf="@+id/textView5" -->
 
             <ImageView
                 android:id="@+id/imageView5"
@@ -74,8 +73,6 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:src="@drawable/topup" />
-            <!--app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" -->
 
             <ImageView
 
@@ -101,8 +98,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 app:layout_constraintEnd_toEndOf="parent" />
-            <!--app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"-->
+
 
         </LinearLayout>
 
@@ -110,10 +106,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-
-            <!--app:layout_constraintEnd_toEndOf="@+id/imageView4"
-        app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" -->
 
             <TextView
                 android:id="@+id/textView6"
@@ -138,9 +130,6 @@
                 android:focusable="true"
                 android:text="Top-Up"
                 android:textAlignment="center" />
-            <!-- app:layout_constraintEnd_toEndOf="@+id/imageView5"
-        app:layout_constraintStart_toStartOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"-->
 
             <TextView
                 android:id="@+id/textView8"
@@ -153,12 +142,9 @@
                 android:focusable="true"
                 android:text="Bill"
                 android:textAlignment="center" />
-            <!--app:layout_constraintEnd_toEndOf="@+id/imageView6"
-        app:layout_constraintStart_toStartOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"-->
-
 
             <TextView
+                android:id="@+id/text_more"
                 style="@style/icon_texts"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -168,10 +154,8 @@
                 android:focusable="true"
                 android:text="More"
                 android:textAlignment="center" />
-            <!--app:layout_constraintStart_toStartOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8"-->
+
         </LinearLayout>
-        <!--app:layout_constraintTop_toBottomOf="@+id/textView"-->
 
     </LinearLayout>
 
@@ -181,24 +165,24 @@
         style="@style/balance_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="391px"
+        android:layout_marginStart="2dp"
         android:text="Transactions"
         android:textColor="#818197"
         android:textSize="46px"
         app:layout_constraintBottom_toTopOf="@+id/rv_balance"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.969"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="1dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_balance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="130dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.375"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
