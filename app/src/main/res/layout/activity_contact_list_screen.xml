@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     style="@style/bgRound"
+    android:background="#fff"
     tools:context=".ContactListScreen">
 
     <TextView
@@ -30,11 +31,13 @@
         android:layout_marginEnd="88dp"
         android:clickable="true"
         android:focusable="true"
-        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:background="#fff"
+        android:src="@drawable/arrow_left"
         app:layout_constraintEnd_toStartOf="@+id/tv_contacts"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/et_search"

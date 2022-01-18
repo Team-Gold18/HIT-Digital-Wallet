@@ -28,6 +28,7 @@
     <style name="bgRound">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">47dp</item>
+        <item name="color">#fff</item>
     </style>
 
     <style name="contactFont">

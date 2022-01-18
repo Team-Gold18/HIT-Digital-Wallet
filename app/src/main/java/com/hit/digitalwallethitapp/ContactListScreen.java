@@ -70,13 +70,13 @@ public class ContactListScreen extends AppCompatActivity {
                 R.drawable.rose,
                 R.drawable.angela,
                 R.drawable.andrea,
-              //  R.drawable.korean,
+                R.drawable.karen,
                 R.drawable.thomas,
                 R.drawable.samantha,
                 R.drawable.rose,
                 R.drawable.angela,
                 R.drawable.andrea,
-               // R.drawable.korean,
+                R.drawable.karen,
                 R.drawable.thomas
         };
 
@@ -87,7 +87,7 @@ public class ContactListScreen extends AppCompatActivity {
         listener = new ContactListAdapter.RecyclerViewClickListener() {
             @Override
             public void onClick(View v, int position) {
-                Intent intent = new Intent(getApplicationContext(),BalanceScreen.class);
+                Intent intent = new Intent(getApplicationContext(),SendMoneyScreen.class);
                 startActivity(intent);
             }
         };

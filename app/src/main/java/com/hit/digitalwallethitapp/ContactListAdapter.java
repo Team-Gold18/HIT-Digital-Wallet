@@ -67,6 +67,7 @@ public class ContactListAdapter extends RecyclerView.Adapter<ContactListAdapter.
 
         @Override
         public void onClick(View view) {
+
             listener.onClick(view, getAdapterPosition());
         }
 
