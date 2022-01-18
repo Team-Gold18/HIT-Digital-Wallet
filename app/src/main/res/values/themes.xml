@@ -12,12 +12,36 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+    </style>
 
+    <style name="text_style">
+        <item name="fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="menu_list_items">
+        <item name="android:textSize">14sp</item>
+        <item name="color">@color/menu_list_text</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="balance_text">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">normal</item>
     </style>
 
     <style name="icon_sizes">
         <item name="android:layout_width">64dp</item>
         <item name="android:layout_height">59dp</item>
     </style>
+
+    <style name="icon_texts">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">normal</item>
+        <item name="lineHeight">46px</item>
+        <item name="android:textSize">44px</item>
+        <item name="android:textColor">#818197</item>
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+
 
 </resources>
