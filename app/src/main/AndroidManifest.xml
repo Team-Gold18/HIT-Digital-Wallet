@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DigitalWalletHITAPP">
         <activity
-            android:name=".TopUpScreen"
-            android:exported="false" />
-        <activity
             android:name=".WithdrawScreen"
             android:exported="true" />
         <activity
@@ -22,19 +19,19 @@
             android:name=".ElectricityBillScreen"
             android:exported="true" />
         <activity
-            android:name=".SendMoneyScreen"
+            android:name=".MainActivity"
             android:exported="true" />
         <activity
             android:name=".MenuScreen"
             android:exported="true" />
-        <activity
-            android:name=".BalanceScreen"
-            android:exported="true" />
+
         <activity
             android:name=".ContactListScreen"
             android:exported="true" />
+
         <activity
-            android:name=".SplashScreen"
+            android:name=".SendMoneyScreen"
+
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,10 +39,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
