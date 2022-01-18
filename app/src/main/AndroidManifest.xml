@@ -21,6 +21,9 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+        <activity
+            android:name=".MenuScreen"
+            android:exported="true" />
 
         <activity
             android:name=".ContactListScreen"

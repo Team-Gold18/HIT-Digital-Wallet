@@ -44,7 +44,7 @@ public class SendMoneyScreen extends AppCompatActivity implements CustomSpinner.
         swipeButton.setOnStateChangeListener(new OnStateChangeListener() {
             @Override
             public void onStateChange(boolean active) {
-                startActivity(new Intent(SendMoneyScreen.this, WithdrawScreen.class ));
+                startActivity(new Intent(SendMoneyScreen.this, PaymentSummaryScreen.class ));
             }
         });
 
