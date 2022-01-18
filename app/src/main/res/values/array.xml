@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="members">
+        <item>Samantha</item>
+        <item>rose</item>
+        <item>angela</item>
+        <item>andrea</item>
+        <item>karen</item>
+        <item>thomas</item>
+
+    </array>
+
+    <array name="members_images">
+        <item>@drawable/samantha</item>
+        <item>@drawable/rose</item>
+        <item>@drawable/angela</item>
+        <item>@drawable/andrea</item>
+        <item>@drawable/karen</item>
+        <item>@drawable/thomas</item>
+
+    </array>
+
+
+
+</resources>
