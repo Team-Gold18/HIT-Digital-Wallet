@@ -63,8 +63,10 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -86,27 +88,27 @@
                 android:id="@+id/box_1"
                 android:layout_width="340dp"
                 android:layout_height="84dp"
+                android:contentDescription="TODO"
                 android:src="@drawable/boxlayout"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.507"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="ImageContrastCheck"
-                android:contentDescription="TODO" />
+                tools:ignore="ImageContrastCheck" />
 
             <ImageView
                 android:id="@+id/ic_personal_acc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
+                android:contentDescription="TODO"
                 android:src="@drawable/ic_group_4"
                 app:layout_constraintBottom_toBottomOf="@+id/box_1"
                 app:layout_constraintEnd_toEndOf="@+id/box_1"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/box_1"
                 app:layout_constraintTop_toTopOf="@+id/box_1"
-                tools:ignore="ImageContrastCheck"
-                android:contentDescription="TODO" />
+                tools:ignore="ImageContrastCheck" />
 
             <TextView
                 android:id="@+id/tv_personal_acc"
@@ -129,28 +131,27 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="25dp"
-                android:scaleX="1.5"
-                android:scaleY="1.5"
+                android:button="@drawable/radio_btn"
                 app:layout_constraintBottom_toBottomOf="@+id/box_1"
                 app:layout_constraintEnd_toEndOf="@+id/box_1"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toEndOf="@+id/tv_personal_acc"
                 app:layout_constraintStart_toStartOf="@+id/box_1"
                 app:layout_constraintTop_toTopOf="@+id/box_1"
-                tools:ignore="DuplicateSpeakableTextCheck" />
+                tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
 
             <ImageView
                 android:id="@+id/box_2"
                 android:layout_width="340dp"
                 android:layout_height="84dp"
                 android:layout_marginTop="20dp"
+                android:contentDescription="TODO"
                 android:src="@drawable/boxlayout"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.507"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/box_1"
-                tools:ignore="ImageContrastCheck"
-                android:contentDescription="TODO" />
+                tools:ignore="ImageContrastCheck" />
 
             <ImageView
                 android:id="@+id/ic_business_acc"
@@ -185,13 +186,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="25dp"
-                android:scaleX="1.5"
-                android:scaleY="1.5"
+                android:button="@drawable/radio_btn"
                 app:layout_constraintBottom_toBottomOf="@+id/box_2"
                 app:layout_constraintEnd_toEndOf="@+id/box_2"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="@+id/box_2"
-                app:layout_constraintTop_toTopOf="@+id/box_2" />
+                app:layout_constraintTop_toTopOf="@+id/box_2"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <ImageView
                 android:id="@+id/box_3"
@@ -204,7 +205,8 @@
                 app:layout_constraintHorizontal_bias="0.507"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/box_2"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <ImageView
                 android:id="@+id/ic_faqmily_acc"
@@ -238,13 +240,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="25dp"
-                android:scaleX="1.5"
-                android:scaleY="1.5"
+                android:button="@drawable/radio_btn"
+                android:scaleX="1"
+                android:scaleY="1"
                 app:layout_constraintBottom_toBottomOf="@+id/box_3"
                 app:layout_constraintEnd_toEndOf="@+id/box_3"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="@+id/box_3"
-                app:layout_constraintTop_toTopOf="@+id/box_3" />
+                app:layout_constraintTop_toTopOf="@+id/box_3"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -266,15 +270,16 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
+        android:id="@+id/img_arrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="TODO"
         android:src="@drawable/ic_arrow___left"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/txt_Withdraw"
         app:layout_constraintHorizontal_bias="0.255"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.065"
-        android:contentDescription="TODO" />
+        app:layout_constraintVertical_bias="0.065" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 
@@ -13,6 +16,7 @@ public class MenuScreen extends AppCompatActivity {
     ArrayList<MenuModelClass> menu_items;
     RecyclerView recyclerView;
 
+    ImageView arr;
 
 
 
@@ -24,6 +28,16 @@ public class MenuScreen extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerView);
         getData();
         setAdapter();
+
+        arr = findViewById(R.id.arrow);
+
+        arr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuScreen.this, BalanceScreen.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void setAdapter() {
