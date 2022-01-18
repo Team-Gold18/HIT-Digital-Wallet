@@ -44,19 +44,23 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="16dp"
         android:scaleType="centerCrop"
+        app:layout_constraintHorizontal_weight="1"
         android:src="@drawable/grocery_icon"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="40dp"/>
 
     <TextView
         android:id="@+id/textDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/poppins"
+        android:paddingBottom="5dp"
         android:text="Nov 17"
         android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="@+id/balanceImage"
+        android:textSize="43px"
+        app:layout_constraintHorizontal_weight="2"
         app:layout_constraintStart_toStartOf="@+id/textTopic"
         app:layout_constraintTop_toBottomOf="@+id/textTopic" />
 
@@ -66,6 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="28dp"
         android:text="326.800"
+        android:paddingBottom="5dp"
         android:textColor="#273240"
         android:fontFamily="@font/poppins"
         android:textSize="45px"
@@ -79,14 +84,14 @@
         android:id="@+id/textDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
         android:layout_marginEnd="28dp"
         android:fontFamily="@font/poppins"
         android:text="Minimarket Anugrah"
         android:textSize="43px"
         app:layout_constraintBottom_toBottomOf="@+id/textDate"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textDate"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintTop_toBottomOf="@+id/textBalance"
         app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
