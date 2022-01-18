@@ -23,6 +23,7 @@ public class ContactListAdapter extends RecyclerView.Adapter<ContactListAdapter.
         this.newUserArrayList = newUserArrayList;
     }
 
+
     @NonNull
     @Override
     public ContactListAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -48,7 +49,7 @@ public class ContactListAdapter extends RecyclerView.Adapter<ContactListAdapter.
         return newUserArrayList.size();
     }
 
-    public  static class MyViewHolder extends RecyclerView.ViewHolder{
+    public  static class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         TextView tv_user_name;
         TextView tv_acc_no;
@@ -59,6 +60,11 @@ public class ContactListAdapter extends RecyclerView.Adapter<ContactListAdapter.
             tv_user_name = itemView.findViewById(R.id.tv_user_name);
             tv_acc_no = itemView.findViewById(R.id.tv_acc_no);
             img_user = itemView.findViewById(R.id.img_user);
+        }
+
+        @Override
+        public void onClick(View view) {
+
         }
     }
 }
