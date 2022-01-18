@@ -5,37 +5,33 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DigitalWalletHITAPP">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
         <activity
-            android:name=".BalanceScreen"
+            android:name=".MainActivity"
             android:exported="true" />
         <activity
             android:name=".PaymentSummaryScreen"
             android:exported="true" />
         <activity
-            android:name=".WithdrawScreen"
+            android:name=".ElectricityBillScreen"
             android:exported="true" />
         <activity
             android:name=".SendMoneyScreen"
             android:exported="true" />
         <activity
-
             android:name=".MenuScreen"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
-
+            android:name=".BalanceScreen"
             android:exported="true" />
         <activity
             android:name=".ContactListScreen"
             android:exported="true" />
-
         <activity
-            android:name=".ElectricityBillScreen"
-
+            android:name=".WithdrawScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
