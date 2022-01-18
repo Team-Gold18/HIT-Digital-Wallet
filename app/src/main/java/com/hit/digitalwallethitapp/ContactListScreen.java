@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import java.util.ArrayList;
 
@@ -16,6 +18,7 @@ public class ContactListScreen extends AppCompatActivity {
     String[] userName;
     String[] accNo;
     int[] userImg;
+    private ContactListAdapter.RecyclerViewClickListener listener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +31,8 @@ public class ContactListScreen extends AppCompatActivity {
 
         newUserArrayList = new ArrayList<Contacts>();
 
-        contactListAdapter = new ContactListAdapter(this,newUserArrayList);
+        contactListAdapter = new ContactListAdapter(this,newUserArrayList,listener);
+        setOnClickListener();
         recyclerView.setAdapter(contactListAdapter);
 
         userName = new String[]{
@@ -77,6 +81,16 @@ public class ContactListScreen extends AppCompatActivity {
         };
 
         getData();
+    }
+
+    private void setOnClickListener() {
+        listener = new ContactListAdapter.RecyclerViewClickListener() {
+            @Override
+            public void onClick(View v, int position) {
+                Intent intent = new Intent(getApplicationContext(),BalanceScreen.class);
+                startActivity(intent);
+            }
+        };
     }
 
     private void getData() {
