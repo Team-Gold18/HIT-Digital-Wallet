@@ -5,7 +5,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -14,10 +18,67 @@ public class BalanceScreen extends AppCompatActivity {
     ArrayList<BalanceModel> bData;
     RecyclerView recyclerView;
 
+    ImageView transfer, topup, more;
+    TextView transferText, topupText, moreText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_balance_screen);
+
+        transfer = findViewById(R.id.imageView4);
+        transfer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent gotoTransfer = new Intent(BalanceScreen.this,ContactListScreen.class);
+                startActivity(gotoTransfer);
+            }
+        });
+
+        topup = findViewById(R.id.imageView5);
+        topup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent gotoTopup = new Intent(BalanceScreen.this,TopUpScreen.class);
+                startActivity(gotoTopup);
+            }
+        });
+
+        more = findViewById(R.id.imageView8);
+        more.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent gotoMore = new Intent(BalanceScreen.this,MenuScreen.class);
+                startActivity(gotoMore);
+            }
+        });
+
+        transferText = findViewById(R.id.textView6);
+        transferText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent gotoTransferText = new Intent(BalanceScreen.this, ContactListScreen.class);
+                startActivity(gotoTransferText);
+            }
+        });
+
+        topupText = findViewById(R.id.textView7);
+        topupText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent gotoTopupText = new Intent(BalanceScreen.this, TopUpScreen.class);
+                startActivity(gotoTopupText);
+            }
+        });
+
+        moreText = findViewById(R.id.text_more);
+        moreText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent gotoMore = new Intent(BalanceScreen.this, MenuScreen.class);
+                startActivity(gotoMore);
+            }
+        });
 
         recyclerView = findViewById(R.id.rv_balance);
         getData();
