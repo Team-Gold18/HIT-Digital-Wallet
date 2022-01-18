@@ -17,10 +17,12 @@ public class ContactListAdapter extends RecyclerView.Adapter<ContactListAdapter.
 
     Context context;
     ArrayList<Contacts> newUserArrayList;
+    private static RecyclerViewClickListener listener;
 
-    public ContactListAdapter(Context context, ArrayList<Contacts> newUserArrayList) {
+    public ContactListAdapter(Context context, ArrayList<Contacts> newUserArrayList, RecyclerViewClickListener listener) {
         this.context = context;
         this.newUserArrayList = newUserArrayList;
+        this.listener =listener;
     }
 
 
@@ -60,11 +62,18 @@ public class ContactListAdapter extends RecyclerView.Adapter<ContactListAdapter.
             tv_user_name = itemView.findViewById(R.id.tv_user_name);
             tv_acc_no = itemView.findViewById(R.id.tv_acc_no);
             img_user = itemView.findViewById(R.id.img_user);
+            itemView.setOnClickListener(this);
         }
 
         @Override
         public void onClick(View view) {
 
+            listener.onClick(view, getAdapterPosition());
         }
+
+
+    }
+    public interface RecyclerViewClickListener{
+        void onClick(View v, int position);
     }
 }
