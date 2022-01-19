@@ -83,6 +83,7 @@ public class ContactListScreen extends AppCompatActivity {
         getData();
     }
 
+
     private void setOnClickListener() {
         listener = new ContactListAdapter.RecyclerViewClickListener() {
             @Override
