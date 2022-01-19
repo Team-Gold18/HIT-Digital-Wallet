@@ -19,10 +19,10 @@ public class MenuAdapterClass extends RecyclerView.Adapter<MenuAdapterClass.List
     List<MenuModelClass> menu_items;
     private ListViewHolder.RecycleViewClickListener clickListener;
 
-    public MenuAdapterClass(Context context, List<MenuModelClass> menu_items) {
+    public MenuAdapterClass(Context context, List<MenuModelClass> menu_items,MenuAdapterClass.ListViewHolder.RecycleViewClickListener listener) {
         this.context = context;
         this.menu_items = menu_items;
-        this.clickListener = clickListener;
+        this.clickListener = listener;
     }
 
 
@@ -60,22 +60,24 @@ public class MenuAdapterClass extends RecyclerView.Adapter<MenuAdapterClass.List
         TextView menu_item;
         ImageView icon;
         ImageView arrow;
+        MenuAdapterClass.ListViewHolder.RecycleViewClickListener recycleViewClickListener;
 
         public ListViewHolder(@NonNull View itemView, Context context, List<MenuModelClass> menu_items, RecycleViewClickListener clickListener) {
             super(itemView);
             menu_item = itemView.findViewById(R.id.textView);
             icon = itemView.findViewById(R.id.img);
             arrow = itemView.findViewById(R.id.img1);
+            this.recycleViewClickListener = clickListener;
+            itemView.setOnClickListener(this);
         }
 
         @Override
         public void onClick(View view) {
-
-
+            recycleViewClickListener.onClicklistener(getAdapterPosition());
         }
 
         public interface RecycleViewClickListener{
-
+            void onClicklistener(int position);
         }
     }
 }

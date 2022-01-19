@@ -6,6 +6,7 @@
     android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menu_list_view"
         android:background="@drawable/bg_menu_list1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -44,7 +45,7 @@
             style="@style/menu_list_items"
             android:layout_width="match_parent"
             android:layout_height="32sp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="24dp"
             android:paddingStart="60sp"
             android:text="Send Money"
             app:layout_constraintStart_toStartOf="parent"
