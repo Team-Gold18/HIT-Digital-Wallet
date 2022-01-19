@@ -6,6 +6,7 @@
     android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menu_list_view"
         android:background="@drawable/bg_menu_list1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,24 +20,23 @@
 
         <ImageView
             android:id="@+id/img"
-            android:layout_width="32sp"
-            android:layout_height="32sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="16dp"
-            android:src="@drawable/shapes"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.043"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/img1"
-            android:layout_width="20sp"
-            android:layout_height="15sp"
-            android:src="@drawable/ic_baseline_arrow_back_24"
-            android:layout_marginTop="8sp"
-            android:layout_marginStart="25sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/img" />
+<!--        <ImageView-->
+<!--            android:id="@+id/img1"-->
+<!--            android:layout_width="20sp"-->
+<!--            android:layout_height="15sp"-->
+<!--            android:src="@drawable/ic_baseline_arrow_back_24"-->
+<!--            android:layout_marginTop="8sp"-->
+<!--            android:layout_marginStart="25sp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/img" />-->
 
 
         <TextView
@@ -44,9 +44,10 @@
             style="@style/menu_list_items"
             android:layout_width="match_parent"
             android:layout_height="32sp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="24dp"
             android:paddingStart="60sp"
             android:text="Send Money"
+            android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

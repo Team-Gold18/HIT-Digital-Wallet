@@ -11,6 +11,7 @@ import android.view.TextureView;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.time.Instant;
@@ -21,7 +22,8 @@ public class SplashScreen extends AppCompatActivity {
     //variables
     Animation topAnim, bottomAnim;
     ImageView image;
-    TextView name, power;
+    TextView power;
+    LinearLayout name;
 
     @RequiresApi(api = Build.VERSION_CODES.P)
     @Override
@@ -35,7 +37,7 @@ public class SplashScreen extends AppCompatActivity {
 
         //Hooks
         image = findViewById(R.id.imageView);
-        name = findViewById(R.id.textView6);
+        name = findViewById(R.id.lin1);
         power = findViewById(R.id.textView9);
 
 
@@ -47,7 +49,7 @@ public class SplashScreen extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent i = new Intent(SplashScreen.this,TopUpScreen.class);
+                Intent i = new Intent(SplashScreen.this,BalanceScreen.class);
                 startActivity(i);
 
                 finish();

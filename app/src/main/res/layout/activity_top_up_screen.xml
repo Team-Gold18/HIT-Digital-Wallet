@@ -202,7 +202,7 @@
         android:layout_height="64sp"
         android:layout_marginTop="40dp"
         android:backgroundTint="@null"
-        android:background="@drawable/button_bg"
+        android:background="@drawable/btn_main"
         android:fontFamily="@font/poppins"
         android:text="Done"
         android:textSize="15sp"

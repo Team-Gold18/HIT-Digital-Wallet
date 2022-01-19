@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
 
 
-    <style name="Theme.DigitalWalletHITAPP" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.DigitalWalletHITAPP" parent="Theme.AppCompat.NoActionBar">
 
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
