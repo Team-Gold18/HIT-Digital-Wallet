@@ -15,7 +15,6 @@ public class MenuScreen extends AppCompatActivity implements MenuAdapterClass.Li
     MenuAdapterClass menuAdapterClass;
     ArrayList<MenuModelClass> menu_items;
     RecyclerView recyclerView;
-
     ImageView arr;
 
 
@@ -63,7 +62,7 @@ public class MenuScreen extends AppCompatActivity implements MenuAdapterClass.Li
     @Override
     public void onClicklistener(int position) {
 
-        int index = 0;
+
         int id = menu_items.get(position).getId();
 
         switch (id) {
