@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import java.util.ArrayList;
@@ -19,8 +20,7 @@ import android.widget.ImageView;
 public class ElectricityBillScreen extends AppCompatActivity {
 
         ImageView backArrow;
-
-
+        private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,15 @@ public class ElectricityBillScreen extends AppCompatActivity {
 
 
         backArrow = findViewById(R.id.backArrow);
+        button = findViewById( R.id.con_btn);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                continueBtn();
+
+            }
+        });
 
         backArrow.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,5 +49,12 @@ public class ElectricityBillScreen extends AppCompatActivity {
 
 
         }
+        public  void continueBtn(){
+        Intent intent= new Intent(this, PaymentSummaryScreen.class);
+        startActivity(intent);
+        }
+
+
+
 
     }

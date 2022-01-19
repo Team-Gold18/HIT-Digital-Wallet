@@ -18,7 +18,7 @@
             android:name=".PaymentSummaryScreen"
             android:exported="true" />
         <activity
-            android:name=".ElectricityBillScreen"
+            android:name=".TransactionHistoryActivity"
             android:exported="true" />
         <activity
             android:name=".SendMoneyScreen"
@@ -36,7 +36,7 @@
             android:name=".BalanceScreen"
             android:exported="true"/>
         <activity
-            android:name=".TransactionHistoryActivity"
+            android:name=".ElectricityBillScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
