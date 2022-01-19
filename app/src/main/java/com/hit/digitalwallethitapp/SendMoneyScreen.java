@@ -13,11 +13,14 @@ import com.ebanx.swipebtn.OnStateChangeListener;
 import com.ebanx.swipebtn.SwipeButton;
 import com.hit.digitalwallethitapp.ContactMembers.Data;
 
+import java.util.ArrayList;
+
 
 public class SendMoneyScreen extends AppCompatActivity implements CustomSpinner.OnSpinnerEventsListener  {
 
 
     private CustomSpinner spinner_members;
+//    ArrayList<Contacts> newUserArrayList;
 
 
     ImageView arr;
@@ -28,12 +31,11 @@ public class SendMoneyScreen extends AppCompatActivity implements CustomSpinner.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_send_money_screen);
 
-        //create to Kasun
 
+//        String name = getIntent().getExtras().getString("arraylist","no");
 
 
         spinner_members = findViewById(R.id.spinner_mambers);
-
         spinner_members.setSpinnerEventsListener(this);
         adapter = new MembersAdapter(SendMoneyScreen.this, Data.getMembersList());
         spinner_members.setAdapter(adapter);
