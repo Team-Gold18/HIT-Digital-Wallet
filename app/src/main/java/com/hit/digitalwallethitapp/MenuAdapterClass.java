@@ -43,11 +43,11 @@ public class MenuAdapterClass extends RecyclerView.Adapter<MenuAdapterClass.List
     public void onBindViewHolder(@NonNull ListViewHolder holder, int position) {
     String items = menu_items.get(position).getItem_name();
     int image = menu_items.get(position).getImg();
-    int image1 = menu_items.get(position).getImg1();
+//    int image1 = menu_items.get(position).getImg1();
 
     holder.menu_item.setText(items);
     holder.icon.setImageResource(image);
-    holder.arrow.setImageResource(image1);
+//    holder.arrow.setImageResource(image1);
     }
 
     @Override
@@ -59,14 +59,14 @@ public class MenuAdapterClass extends RecyclerView.Adapter<MenuAdapterClass.List
 
         TextView menu_item;
         ImageView icon;
-        ImageView arrow;
+//        ImageView arrow;
         MenuAdapterClass.ListViewHolder.RecycleViewClickListener recycleViewClickListener;
 
         public ListViewHolder(@NonNull View itemView, Context context, List<MenuModelClass> menu_items, RecycleViewClickListener clickListener) {
             super(itemView);
             menu_item = itemView.findViewById(R.id.textView);
             icon = itemView.findViewById(R.id.img);
-            arrow = itemView.findViewById(R.id.img1);
+//            arrow = itemView.findViewById(R.id.img1);
             this.recycleViewClickListener = clickListener;
             itemView.setOnClickListener(this);
         }
