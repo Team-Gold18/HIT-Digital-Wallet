@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.hit.digitalwallethitapp">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label=""
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DigitalWalletHITAPP">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:replace="android:label">
         <activity
-            android:name=".BalanceScreen"
+            android:name=".MainActivity"
             android:exported="true" />
         <activity
             android:name=".PaymentSummaryScreen"
             android:exported="true" />
         <activity
-            android:name=".WithdrawScreen"
+            android:name=".ElectricityBillScreen"
             android:exported="true" />
         <activity
             android:name=".SendMoneyScreen"
@@ -25,13 +27,16 @@
             android:name=".MenuScreen"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".TopUpScreen"
             android:exported="true" />
         <activity
             android:name=".ContactListScreen"
             android:exported="true" />
         <activity
-            android:name=".ElectricityBillScreen"
+            android:name=".BalanceScreen"
+            android:exported="true"/>
+        <activity
+            android:name=".TransactionHistoryActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
