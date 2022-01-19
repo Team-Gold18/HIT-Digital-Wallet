@@ -23,6 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
+        android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -58,6 +59,7 @@
             app:flow_horizontalAlign="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+           app:cardBackgroundColor="#fff"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
 
@@ -99,6 +101,7 @@
             android:layout_weight="2"
             app:cardCornerRadius="25dp"
             app:cardElevation="50dp"
+            app:cardBackgroundColor="#fff"
             app:flow_horizontalAlign="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
