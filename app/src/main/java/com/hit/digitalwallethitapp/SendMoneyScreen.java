@@ -20,7 +20,7 @@ public class SendMoneyScreen extends AppCompatActivity implements CustomSpinner.
 
 
     private CustomSpinner spinner_members;
-    ArrayList<Contacts> newUserArrayList;
+//    ArrayList<Contacts> newUserArrayList;
 
 
     ImageView arr;
@@ -32,11 +32,10 @@ public class SendMoneyScreen extends AppCompatActivity implements CustomSpinner.
         setContentView(R.layout.activity_send_money_screen);
 
 
-        String name = getIntent().getExtras().getString("arraylist","no");
+//        String name = getIntent().getExtras().getString("arraylist","no");
 
 
         spinner_members = findViewById(R.id.spinner_mambers);
-
         spinner_members.setSpinnerEventsListener(this);
         adapter = new MembersAdapter(SendMoneyScreen.this, Data.getMembersList());
         spinner_members.setAdapter(adapter);

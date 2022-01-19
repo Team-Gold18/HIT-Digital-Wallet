@@ -97,17 +97,6 @@ public class ContactListScreen extends AppCompatActivity implements ContactListA
         getData();
     }
 
-//    private void setOnClickListener() {
-//        listener = new ContactListAdapter.RecyclerViewClickListener() {
-//            @Override
-//            public void onClick(View v, int position) {
-//                Intent intent = new Intent(ContactListScreen.this,WithdrawScreen.class);
-//                startActivity(intent);
-//            }
-//        };
-//    }
-
-
     private void getData() {
         for(int i=0; i<userName.length; i++){
             Contacts contacts = new Contacts(userName[i],accNo[i],userImg[i]);
@@ -121,9 +110,9 @@ public class ContactListScreen extends AppCompatActivity implements ContactListA
     @Override
     public void onClick(int position) {
         Intent intent = new Intent(ContactListScreen.this,SendMoneyScreen.class);
-        Contacts user = newUserArrayList.get(position);
-        String name = newUserArrayList.get(position).getUserName();
-        intent.putExtra("arraylist", name);
+//        Contacts user = newUserArrayList.get(position);
+//        String name = newUserArrayList.get(position).getUserName();
+//        intent.putExtra("arraylist", name);
         startActivity(intent);
     }
 }
