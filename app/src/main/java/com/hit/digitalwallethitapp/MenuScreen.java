@@ -15,7 +15,6 @@ public class MenuScreen extends AppCompatActivity {
     MenuAdapterClass menuAdapterClass;
     ArrayList<MenuModelClass> menu_items;
     RecyclerView recyclerView;
-
     ImageView arr;
 
 
