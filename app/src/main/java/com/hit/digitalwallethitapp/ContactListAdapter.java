@@ -17,12 +17,12 @@ public class ContactListAdapter extends RecyclerView.Adapter<ContactListAdapter.
 
     Context context;
     ArrayList<Contacts> newUserArrayList;
-    private static RecyclerViewClickListener listener;
+    private  RecyclerViewClickListener clicklistener;
 
     public ContactListAdapter(Context context, ArrayList<Contacts> newUserArrayList, RecyclerViewClickListener listener) {
         this.context = context;
         this.newUserArrayList = newUserArrayList;
-        this.listener =listener;
+        this.clicklistener =listener;
     }
 
 
@@ -32,7 +32,7 @@ public class ContactListAdapter extends RecyclerView.Adapter<ContactListAdapter.
 
         View v = LayoutInflater.from(context).inflate(R.layout.contact_list_item, parent, false);
 
-        return new MyViewHolder(v);
+        return new MyViewHolder(v,clicklistener);
     }
 
     @Override
@@ -56,24 +56,26 @@ public class ContactListAdapter extends RecyclerView.Adapter<ContactListAdapter.
         TextView tv_user_name;
         TextView tv_acc_no;
         ShapeableImageView img_user;
+        RecyclerViewClickListener recyclerViewClickListener;
 
-        public MyViewHolder(@NonNull View itemView) {
+        public MyViewHolder(@NonNull View itemView,RecyclerViewClickListener onClickListener) {
             super(itemView);
             tv_user_name = itemView.findViewById(R.id.tv_user_name);
             tv_acc_no = itemView.findViewById(R.id.tv_acc_no);
             img_user = itemView.findViewById(R.id.img_user);
+            this.recyclerViewClickListener = onClickListener;
             itemView.setOnClickListener(this);
         }
 
         @Override
         public void onClick(View view) {
 
-            listener.onClick(view, getAdapterPosition());
+            recyclerViewClickListener.onClick(getAdapterPosition());
         }
 
 
     }
     public interface RecyclerViewClickListener{
-        void onClick(View v, int position);
+        void onClick(int position);
     }
 }

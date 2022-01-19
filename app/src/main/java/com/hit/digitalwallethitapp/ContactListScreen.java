@@ -6,11 +6,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.view.View;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 
-public class ContactListScreen extends AppCompatActivity {
+public class ContactListScreen extends AppCompatActivity implements ContactListAdapter.RecyclerViewClickListener{
 
     RecyclerView recyclerView;
     ArrayList<Contacts> newUserArrayList;
@@ -19,11 +22,22 @@ public class ContactListScreen extends AppCompatActivity {
     String[] accNo;
     int[] userImg;
     private ContactListAdapter.RecyclerViewClickListener listener;
+    ImageButton backArrow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_list_screen);
+
+        //backArrow
+        backArrow = findViewById(R.id.img_back_arrow_contact);
+        backArrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ContactListScreen.this,BalanceScreen.class);
+                startActivity(intent);
+            }
+        });
 
         recyclerView = findViewById(R.id.contact_recyclerview);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -31,8 +45,8 @@ public class ContactListScreen extends AppCompatActivity {
 
         newUserArrayList = new ArrayList<Contacts>();
 
-        contactListAdapter = new ContactListAdapter(this,newUserArrayList,listener);
-        setOnClickListener();
+        contactListAdapter = new ContactListAdapter(this,newUserArrayList,this::onClick);
+        //setOnClickListener();
         recyclerView.setAdapter(contactListAdapter);
 
         userName = new String[]{
@@ -83,15 +97,16 @@ public class ContactListScreen extends AppCompatActivity {
         getData();
     }
 
-    private void setOnClickListener() {
-        listener = new ContactListAdapter.RecyclerViewClickListener() {
-            @Override
-            public void onClick(View v, int position) {
-                Intent intent = new Intent(getApplicationContext(),SendMoneyScreen.class);
-                startActivity(intent);
-            }
-        };
-    }
+//    private void setOnClickListener() {
+//        listener = new ContactListAdapter.RecyclerViewClickListener() {
+//            @Override
+//            public void onClick(View v, int position) {
+//                Intent intent = new Intent(ContactListScreen.this,WithdrawScreen.class);
+//                startActivity(intent);
+//            }
+//        };
+//    }
+
 
     private void getData() {
         for(int i=0; i<userName.length; i++){
@@ -102,4 +117,13 @@ public class ContactListScreen extends AppCompatActivity {
         contactListAdapter.notifyDataSetChanged();
     }
 
+
+    @Override
+    public void onClick(int position) {
+        Intent intent = new Intent(ContactListScreen.this,SendMoneyScreen.class);
+        Contacts user = newUserArrayList.get(position);
+        String name = newUserArrayList.get(position).getUserName();
+        intent.putExtra("arraylist", name);
+        startActivity(intent);
+    }
 }
