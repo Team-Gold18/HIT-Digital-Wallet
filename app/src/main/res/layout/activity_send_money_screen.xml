@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SendMoneyScreen"
-    android:background="#f3f3f8"
-    >
+    android:background="#ffffff"
+    tools:context=".SendMoneyScreen">
 
 
     <!--changes-->
@@ -16,17 +15,44 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="45dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="35dp"
         android:layout_marginTop="30dp"
-        android:layout_marginRight="40dp"
-        android:popupBackground="#f3f3f8"
+
+        android:dropDownVerticalOffset="55dp"
+
+        android:layout_marginRight="35dp"
         android:layout_marginBottom="30dp"
+        android:popupBackground="#F1F1F9"
         android:background="@drawable/bg_spinner_members"
         app:layout_constraintBottom_toTopOf="@+id/editText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintHorizontal_bias="0.64"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/spinner_mambers"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="60dp"-->
+<!--        android:layout_marginTop="80dp"-->
+<!--        android:layout_marginEnd="60dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/editText"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        >-->
+
+<!--        <AutoCompleteTextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Samantha" />-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+
 
     <EditText
         android:id="@+id/editText"
@@ -45,8 +71,8 @@
         android:inputType="number"
         android:paddingLeft="10dp"
         android:text="150.000"
-        android:textColor="#525298"
         android:textAlignment="center"
+        android:textColor="#525298"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,38 +80,39 @@
 
 
     <LinearLayout
-    android:id="@+id/linearLayout"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.5"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent">
-
-    <ImageView
-        android:id="@+id/IV01"
-        android:layout_width="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="30dp"
-        android:paddingLeft="10dp"
-        android:layout_marginStart="30dp"
-        app:srcCompat="@drawable/ic_arrow___left" />
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/balance_text"
-        android:paddingTop="30dp"
-        android:text="Send Money"
-        android:paddingRight="50dp"
-        android:paddingLeft="100dp"
+        <ImageView
+            android:id="@+id/IV01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="30dp"
+            app:srcCompat="@drawable/ic_arrow___left" />
 
-        android:textColor="#082431"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-</LinearLayout>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:paddingLeft="80dp"
+            android:paddingTop="30dp"
+            android:paddingRight="50dp"
+            android:text="Send Money"
+
+            android:textColor="#082431"
+            android:textSize="18sp" />
+        <!--        android:textStyle="bold"-->
+
+    </LinearLayout>
 
     <com.ebanx.swipebtn.SwipeButton
         android:id="@+id/swipeId"

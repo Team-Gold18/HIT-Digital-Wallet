@@ -6,15 +6,15 @@
 
             <item>
                 <shape>
-                    <solid android:color="#353E3D3D" />
+                    <solid android:color="@color/purple"/>
                     <corners android:radius="8dp" />
                 </shape>
             </item>
 
             <item android:bottom="3dp" android:left="1dp" android:right="3dp" android:top="1dp">
                 <shape>
-                    <solid android:color="#ffffff" />
-                    <corners android:radius="1dp" />
+                    <solid android:color="#F1F1F9"/>
+                    <corners android:radius="3dp" />
                 </shape>
             </item>
             <item>

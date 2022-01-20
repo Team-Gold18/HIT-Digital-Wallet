@@ -66,12 +66,12 @@ public class SendMoneyScreen extends AppCompatActivity implements CustomSpinner.
     @Override
     public void onPopupWindowOpened(Spinner spinner) {
 
-        spinner_members.setBackground(getResources().getDrawable(R.drawable.bg_spinner_members_up));
+     spinner_members.setBackground(getResources().getDrawable(R.drawable.bg_spinner_members_up));
     }
 
     @Override
     public void onPopupWindowClosed(Spinner spinner) {
 
-        spinner_members.setBackground(getResources().getDrawable(R.drawable.bg_spinner_members));
+     spinner_members.setBackground(getResources().getDrawable(R.drawable.bg_spinner_members));
     }
 }
