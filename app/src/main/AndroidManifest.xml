@@ -32,13 +32,13 @@
             android:exported="true" />
         <activity
 
-            android:name=".ContactListScreen"
+            android:name=".ElectricityBillScreen"
             android:exported="true" />
         <activity
             android:name=".BalanceScreen"
             android:exported="true"/>
         <activity
-            android:name=".ElectricityBillScreen"
+            android:name=".MenuScreen"
 
             android:exported="true">
             <intent-filter>
