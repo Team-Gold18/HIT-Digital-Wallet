@@ -18,6 +18,9 @@
             android:name=".PaymentSummaryScreen"
             android:exported="true" />
         <activity
+            android:name=".WithdrawScreen"
+            android:exported="true" />
+        <activity
             android:name=".ElectricityBillScreen"
             android:exported="true" />
         <activity
