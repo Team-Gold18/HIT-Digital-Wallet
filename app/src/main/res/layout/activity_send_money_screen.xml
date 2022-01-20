@@ -83,8 +83,9 @@
         android:paddingLeft="100dp"
 
         android:textColor="#082431"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textSize="18sp"/>
+<!--        android:textStyle="bold"-->
+       
 </LinearLayout>
 
     <com.ebanx.swipebtn.SwipeButton
