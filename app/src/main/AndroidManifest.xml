@@ -24,6 +24,9 @@
             android:name=".BalanceScreen"
             android:exported="true" />
         <activity
+            android:name=".SendMoneyScreen"
+            android:exported="true" />
+        <activity
             android:name=".MenuScreen"
             android:exported="true" />
         <activity
