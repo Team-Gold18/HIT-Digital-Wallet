@@ -35,15 +35,14 @@
         <activity
 
             android:name=".ContactListScreen"
+            android:exported="true" />
+        <activity
 
+            android:name=".ElectricityBillScreen"
             android:exported="true" />
 
-
-
-            android:name=".BalanceScreen"
-            android:exported="true"/>
         <activity
-            android:name=".ElectricityBillScreen"
+            android:name=".SplashScreen"
 
             android:exported="true">
             <intent-filter>
