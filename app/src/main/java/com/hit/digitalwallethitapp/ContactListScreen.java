@@ -46,7 +46,6 @@ public class ContactListScreen extends AppCompatActivity implements ContactListA
         newUserArrayList = new ArrayList<Contacts>();
 
         contactListAdapter = new ContactListAdapter(this,newUserArrayList,this::onClick);
-        //setOnClickListener();
         recyclerView.setAdapter(contactListAdapter);
 
         userName = new String[]{
@@ -110,9 +109,6 @@ public class ContactListScreen extends AppCompatActivity implements ContactListA
     @Override
     public void onClick(int position) {
         Intent intent = new Intent(ContactListScreen.this,SendMoneyScreen.class);
-//        Contacts user = newUserArrayList.get(position);
-//        String name = newUserArrayList.get(position).getUserName();
-//        intent.putExtra("arraylist", name);
         startActivity(intent);
     }
 }
