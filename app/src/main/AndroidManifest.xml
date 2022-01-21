@@ -41,11 +41,11 @@
             android:exported="true" />
         <activity
 
-            android:name=".SplashScreen"
+            android:name=".ElectricityBillScreen"
             android:exported="true" />
 
         <activity
-            android:name=".ElectricityBillScreen"
+            android:name=".SplashScreen"
 
             android:exported="true">
             <intent-filter>
