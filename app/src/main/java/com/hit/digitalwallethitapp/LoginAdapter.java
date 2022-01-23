@@ -35,10 +35,6 @@ public class LoginAdapter extends FragmentStatePagerAdapter {
 
             default:
                 return null;
-
-
-
-
         }
     }
 }
