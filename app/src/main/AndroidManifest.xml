@@ -12,6 +12,9 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:replace="android:label">
         <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" />
         <activity
@@ -26,27 +29,25 @@
         <activity
             android:name=".SendMoneyScreen"
             android:exported="true" />
+
         <activity
             android:name=".MenuScreen"
             android:exported="true" />
         <activity
             android:name=".TopUpScreen"
             android:exported="true" />
+
         <activity
             android:name=".WithdrawScreen"
             android:exported="true" />
         <activity
-
             android:name=".ContactListScreen"
             android:exported="true" />
         <activity
-
             android:name=".ElectricityBillScreen"
             android:exported="true" />
-
         <activity
             android:name=".SplashScreen"
-
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
