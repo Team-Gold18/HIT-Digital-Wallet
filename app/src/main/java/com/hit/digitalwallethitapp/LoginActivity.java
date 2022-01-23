@@ -1,6 +1,8 @@
 package com.hit.digitalwallethitapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
@@ -61,6 +63,11 @@ public class LoginActivity extends AppCompatActivity {
         tabLayout.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(100).start();
 
 
+
+    }
+
+    public void setCurrentItem(int which) {
+            viewPager.setCurrentItem(which);
 
     }
 }
