@@ -16,9 +16,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/rv_balance"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        >
 
         <TextView
             android:id="@+id/textView"
@@ -29,7 +31,8 @@
             android:lineHeight="45px"
             android:text="Your Balance"
             android:textAlignment="center"
-            android:textSize="45px"
+            android:textSize="19dp"
+            android:textColor="#818197"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -43,7 +46,7 @@
             android:text="Rp 8.250.000"
             android:textAlignment="center"
             android:textColor="#2C2C63"
-            android:textSize="95px"
+            android:textSize="35dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent" />
@@ -110,22 +113,24 @@
             <TextView
                 android:id="@+id/textView6"
                 style="@style/icon_texts"
-                android:layout_width="wrap_content"
+                android:layout_width="102dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
-                android:text="Transfer"
+                android:gravity="center_horizontal"
                 android:clickable="true"
                 android:focusable="true"
+                android:text="Transfer"
                 android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/textView7"
                 style="@style/icon_texts"
-                android:layout_width="6dp"
+                android:layout_width="94dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
+                android:gravity="center_horizontal"
                 android:clickable="true"
                 android:focusable="true"
                 android:text="Top-Up"
@@ -134,10 +139,11 @@
             <TextView
                 android:id="@+id/textView8"
                 style="@style/icon_texts"
-                android:layout_width="wrap_content"
+                android:layout_width="82dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
+                android:gravity="center_horizontal"
                 android:clickable="true"
                 android:focusable="true"
                 android:text="Bill"
@@ -146,10 +152,11 @@
             <TextView
                 android:id="@+id/text_more"
                 style="@style/icon_texts"
-                android:layout_width="wrap_content"
+                android:layout_width="89dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
+                android:gravity="center_horizontal"
                 android:clickable="true"
                 android:focusable="true"
                 android:text="More"
@@ -168,7 +175,7 @@
         android:layout_marginStart="2dp"
         android:text="Transactions"
         android:textColor="#818197"
-        android:textSize="46px"
+        android:textSize="19dp"
         app:layout_constraintBottom_toTopOf="@+id/rv_balance"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
@@ -179,10 +186,9 @@
         android:id="@+id/rv_balance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="130dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        tools:layout_editor_absoluteX="40dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

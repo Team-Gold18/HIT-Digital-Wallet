@@ -13,10 +13,11 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class BalanceScreen extends AppCompatActivity {
+public class BalanceScreen extends AppCompatActivity implements BalanceListAdapter.BalanceViewHolder.RecycleViewClickListener{
     BalanceListAdapter balanceListAdapter;
     ArrayList<BalanceModel> bData;
     RecyclerView recyclerView;
+    private BalanceListAdapter.BalanceViewHolder.RecycleViewClickListener clickListener;
 
     ImageView transfer, topup, more;
     TextView transferText, topupText, moreText;
@@ -83,6 +84,8 @@ public class BalanceScreen extends AppCompatActivity {
         recyclerView = findViewById(R.id.rv_balance);
         getData();
         setDataAdapter();
+
+        bData = new ArrayList<BalanceModel>();
     }
 
     private void setDataAdapter() {
@@ -98,5 +101,11 @@ public class BalanceScreen extends AppCompatActivity {
         bData.add(new BalanceModel(R.drawable.entertainment_icon, "Nov 17","Entertainment", "326.800", "Football Game" ));
         bData.add(new BalanceModel(R.drawable.equipment_icon, "Nov 17","Equipment", "326.800", "DSLR Camera" ));
         bData.add(new BalanceModel(R.drawable.officeitem_icon, "Nov 17","Office Items", "326.800", "Stationary" ));
+    }
+
+    @Override
+    public void recycleViewClick(int position) {
+        Intent intent = new Intent(BalanceScreen.this, TransactionHistoryActivity.class);
+        startActivity(intent);
     }
 }
