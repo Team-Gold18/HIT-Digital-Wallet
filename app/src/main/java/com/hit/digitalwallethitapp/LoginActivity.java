@@ -18,7 +18,7 @@ import com.google.android.material.tabs.TabLayout;
 
 public class LoginActivity extends AppCompatActivity {
 
-//    Button loginButton;
+//  Button loginButton;
     TabLayout tabLayout;
     ViewPager viewPager;
     FloatingActionButton fb,google,twitter;
