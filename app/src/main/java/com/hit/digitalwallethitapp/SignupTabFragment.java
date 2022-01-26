@@ -95,7 +95,6 @@ public class SignupTabFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
 //        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.signup_tab_fragment, container, false);
 //
-//
 //        login = root.findViewById(R.id.SignUp);
 //
 //        login.setOnClickListener(new  View.OnClickListener() {
