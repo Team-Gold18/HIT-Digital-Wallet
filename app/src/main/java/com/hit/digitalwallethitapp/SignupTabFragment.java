@@ -33,6 +33,7 @@ public class SignupTabFragment extends Fragment {
     public void createUser ()
     {
         try{
+
             if(!userEmail.getText().toString().isEmpty() && !userPassword.getText().toString().isEmpty())
             {
 
